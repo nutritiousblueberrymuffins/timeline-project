@@ -1,0 +1,109 @@
+
+
+
+
+
+.empty-state { /* popups with form input */
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 42px 20px;
+    color: #b9aecf;
+    font-size: 14px;
+    line-height: 1.8
+}
+
+.empty-state strong {
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 6px
+}
+
+.account-mark {
+    margin-bottom: 24px;
+    width: 46px;
+    height: 46px
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin: 20px 0
+}
+
+.form-field[hidden] {
+    display: none
+}
+
+.form-field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #d1c7e9
+}
+
+.form-field input,
+.form-field select {
+    background: #150d42;
+    border: 1px solid #665794;
+    padding: 14px 16px;
+    border-radius: 8px;
+    color: #fff;
+    width: 100%;
+    font-size: 15px
+}
+
+.form-field input::placeholder,
+.search-field input::placeholder {
+    color: #9283af
+}
+
+.account-submit {
+    width: 100%;
+    margin-top: 4px
+}
+
+.form-note {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #a99abe;
+    text-align: center;
+    margin-top: 18px
+}
+
+.form-error {
+    color: #ffc0be;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 12px
+}
+
+.profile-success {
+    text-align: center
+}
+
+.profile-success[hidden] {
+    display: none
+}
+
+.success-icon { 
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #17b8be23;
+    color: #6fe1ce;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto
+}
+
+.success-icon svg {
+    width: 30px;
+    height: 30px
+}
+ 
+.profile-success p {  /* popups with form input */
+    color: #c5b9df;
+    line-height: 1.7;
+    margin-bottom: 24px
+}

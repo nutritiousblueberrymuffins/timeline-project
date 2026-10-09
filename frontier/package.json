@@ -1,0 +1,16 @@
+{
+  "name": "cosmos-academic-frontier",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A space-inspired academic exploration website.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check app.js && node --check scripts/smoke-test.mjs",
+    "test": "node scripts/smoke-test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

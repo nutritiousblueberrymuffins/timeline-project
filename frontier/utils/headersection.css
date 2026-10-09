@@ -1,0 +1,66 @@
+
+
+
+.site-header { /* header */
+    height: 204px;
+    padding-inline: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    background: #1c0e61f5;
+    border-bottom: 1px solid #130846
+}
+
+.brand { /* header */
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 22px;
+    font-weight: 750;
+    letter-spacing: -.4px
+}
+
+.brand-mark { /* header */
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #822bc5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2dbff;
+    transform: skew(-7deg);
+    flex-shrink: 0
+}
+
+.brand-mark svg { /* header */
+    width: 25px;
+    height: 25px;
+    transform: skew(7deg)
+}
+
+.primary-nav { /* header */
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    font-size: 18px;
+    font-weight: 600
+}
+
+.nav-link { /* header */
+    background: none;
+    padding: 9px 0;
+    color: #d0c6eb;
+    transition: color .2s
+}
+
+.nav-link:hover, /* header */
+.nav-link:focus-visible {
+    color: #fff
+}
+
+.search-link { /* header */
+    color: #00c7f4
+}

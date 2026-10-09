@@ -1,0 +1,227 @@
+/* Program explorer and locally saved explorer profiles. */
+body:has(dialog[open]) { /* popups with dialog family */
+    overflow: hidden
+}
+
+.dialog {
+    position: fixed;
+    border: 1px solid #ffffff1a;
+    padding: 48px;
+    border-radius: 24px;
+    background: #201360;
+    color: #fff;
+    max-height: 88dvh;
+    width: calc(100% - 40px);
+    max-width: 660px;
+    box-shadow: 0 24px 100px #08032280;
+    overflow: auto;
+    color-scheme: dark
+}
+
+.dialog::backdrop {
+    background: #090522b5;
+    backdrop-filter: blur(9px)
+}
+
+.dialog[open] {
+    animation: dialog-in .2s ease-out
+}
+
+@keyframes dialog-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.dialog-close {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff09;
+    color: #c5bce9;
+    z-index: 1
+}
+
+.dialog-close:hover {
+    background: #ffffff18;
+    color: #fff
+}
+
+.dialog-close svg {
+    width: 19px;
+    height: 19px
+}
+
+.dialog h2 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-top: 12px;
+    padding-right: 15px
+}
+
+.dialog-intro { 
+    color: #b7afd1;
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 16px 0 28px
+}
+
+.catalog-dialog {
+    max-width: 960px
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #665794;
+    background: #150d42;
+    border-radius: 10px;
+    padding: 0 16px;
+    color: #a999cf
+}
+
+.search-field input {
+    width: 100%;
+    padding: 17px 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    min-width: 0
+}
+
+.search-field:focus-within {
+    outline: 2px solid #62d9f1;
+    outline-offset: 2px
+}
+
+.search-field input:focus-visible {
+    outline: 0
+}
+
+.search-field kbd {
+    font-size: 11px;
+    border: 1px solid #5b497b;
+    border-radius: 4px;
+    padding: 3px 5px
+}
+
+.catalog-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px
+}
+
+.catalog-filters button {
+    padding: 9px 14px;
+    background: #ffffff07;
+    border: 1px solid #ffffff1b;
+    border-radius: 22px;
+    font-size: 13px;
+    color: #ccc1e4
+}
+
+.catalog-filters button[aria-pressed="true"] {
+    background: #7840cc;
+    border-color: #aa73f5;
+    color: #fff
+}
+
+.catalog-filters button:hover { 
+    border-color: #c3a1fa
+}
+
+#saved-count {
+    font-size: 11px;
+    margin-left: 3px;
+    opacity: .8
+}
+
+.results-count {
+    font-size: 12px;
+    color: #a69aba;
+    margin: 25px 0 14px
+}
+
+.catalog-results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ffffff06;
+    border: 1px solid #ffffff15;
+    border-radius: 12px;
+    padding: 24px;
+    transition: background .2s, border-color .2s;
+    min-height: 220px
+}
+
+.catalog-card:hover {
+    background: #ffffff0c;
+    border-color: #8d61c9
+}
+
+.catalog-card .eyebrow {
+    font-size: 10px;
+    color: #6ed5ef
+}
+
+.catalog-card h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 12px 0
+}
+
+.catalog-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #b5abcf;
+    margin-bottom: 18px
+}
+
+.catalog-card-footer {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px
+}
+
+.catalog-card-footer>span {
+    font-size: 11px;
+    color: #a599c2
+}
+
+.catalog-card-footer>span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #d4bef4;
+    font-size: 12px
+}
+
+.catalog-card-footer svg { /* popups with dialog family */
+    width: 16px;
+    height: 16px
+}

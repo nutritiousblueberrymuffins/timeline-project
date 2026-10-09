@@ -1,0 +1,123 @@
+
+.sky-section { /* hero */
+    position: relative;
+    background: linear-gradient(180deg, #0068f5 20%, #0953ed 54%, #3d19c9 100%);
+    isolation: isolate
+}
+
+.hero-art { /* hero */
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: -2
+}
+
+.hero-art img { /* hero */
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to bottom, #000 84%, transparent 100%)
+}
+
+.orbital-line {  /* hero */
+    position: absolute;
+    width: 1000px;
+    height: 1180px;
+    border: 1px solid #00cbd52c;
+    border-radius: 50%;
+    right: -335px;
+    top: -430px;
+    transform: rotate(10deg);
+    z-index: -1;
+    pointer-events: none
+}
+
+.hero-copy { /* hero */
+    height: 1010px;
+    padding-top: 28px;
+    text-align: center;
+    width: 920px;
+    max-width: 69%;
+    position: relative;
+    z-index: 1
+}
+
+.eyebrow { /* hero */
+    display: block;
+    color: #21b8e8;
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.5;
+    text-transform: uppercase
+}
+
+.hero-eyebrow { /* hero */
+    display: inline-block;
+    padding: 5px 14px 4px;
+    border: 1px solid #06608f80;
+    border-radius: 20px;
+    background: #08498252;
+    font-size: 12px;
+    line-height: 1.6
+}
+
+h1 { /* hero will fix this */
+    font-size: 74px;
+    font-weight: 600;
+    letter-spacing: -.6px;
+    line-height: 1.14;
+    margin-top: 21px;
+    white-space: nowrap
+}
+
+.hero-copy>p { /* hero */
+    color: #a29abb;
+    font-size: 21px;
+    line-height: 1.6;
+    margin-top: 24px
+}
+ 
+.cloudscape { /* hero */
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2
+}
+
+.cloud { /* hero */
+    position: absolute;
+    max-width: none;
+    height: auto;
+    user-select: none
+}
+
+.cloud-left { /* hero */
+    width: 1220px;
+    left: -460px;
+    top: 690px
+}
+
+.cloud-right { /* hero */
+    width: 1030px;
+    right: -310px;
+    top: 673px
+}
+
+.cloud-drift-left { /* hero */
+    width: 224px;
+    left: -157px;
+    top: 985px;
+    transform: rotate(-7deg)
+}
+
+.cloud-drift-center { /* hero */
+    width: 163px;
+    left: 450px;
+    top: 931px;
+    transform: rotate(14deg)
+}
+
+.cloud-drift-right { /* hero */
+    width: 365px;
+    right: -105px;
+    top: 1013px;
+    transform: rotate(8deg)
+}

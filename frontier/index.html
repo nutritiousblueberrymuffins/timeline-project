@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1c105e" />
+    <meta name="description" content="Explore a universe of learning with COSMOS. Discover stellar courses, collaborative research, and hands-on experiences that take you beyond the classroom." />
+    <title>COSMOS — Explore. Learn. Conquer.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/utils/designtoken.css" />
+    <link rel="stylesheet" href="/utils/styles.css" />
+    <link rel="stylesheet" href="/utils/headersection.css" />
+    <link rel="stylesheet" href="/utils/herosection.css" />
+    <link rel="stylesheet" href="/utils/exploresection.css" />
+    <link rel="stylesheet" href="/utils/testimonysection.css" />
+    <link rel="stylesheet" href="/utils/footer.css" /> <!--fix this part add rest of css an find way to modualize i --> 
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <!--fix this part -->
+      <symbol id="icon-rocket" viewBox="0 0 24 24"><path d="M14 5c3-3 6-2 6-2s1 3-2 6l-7 7-5-5 8-6Z"/><path d="m7 10-4 1-1 4 5-1m7 3-1 5 4-1 1-5M6 17l-3 4m4-2-1 3M3 17l-2 1"/><circle cx="15.5" cy="7.5" r="1.5"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+      <symbol id="icon-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/></symbol>
+      <symbol id="icon-people" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6m2 5a5 5 0 0 1 3 4v2"/></symbol>
+      <symbol id="icon-terminal" viewBox="0 0 24 24"><path d="m4 5 6 7-6 7m9 0h7"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+      <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="1"/><path d="M8 21h8m-4-4v4"/></symbol>
+      <symbol id="icon-bird" viewBox="0 0 24 24"><path d="M21 5a7 7 0 0 1-2 .6 3.5 3.5 0 0 0-6 3.3A10 10 0 0 1 4 4s-3 8 5 11a10 10 0 0 1-6 2c8 5 17-1 17-10l1-2Z"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to content</a>  <!--understand what this is -->
+    <div class="site-shell"> <!--understand what this is -->
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="COSMOS home"><span class="brand-mark"><svg><use href="#icon-rocket"/></svg></span><span>Placeholder Logo</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+          <button class="nav-link search-link" data-explore="all">Search</button>
+          <a class="nav-link" href="#explore">Explore</a>
+          <a class="nav-link" href="#testimony">Testimony</a>
+          <button class="nav-link" data-account="login">Login</button>
+          <button class="button button-small" data-account="signup">Sign Up</button>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="sky-section" id="home" aria-labelledby="hero-title">
+          <div class="hero-art" aria-hidden="true"><img src="imgs/astronaut_in_spacesvg.svg" alt="" fetchpriority="high" /></div>
+          <div class="orbital-line" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <span class="eyebrow hero-eyebrow">Academic frontier expedition</span>
+            <h1 id="hero-title">Explore. Learn. Conquer.</h1>
+            <p>Embark on a journey through the cosmos of knowledge</p>
+          </div>
+          <div class="cloudscape" aria-hidden="true">
+            <img class="cloud cloud-left" src="imgs/g225-7.png" alt="" />
+            <img class="cloud cloud-right" src="imgs/g227.png" alt="" />
+            <img class="cloud cloud-drift-left" src="imgs/g222-0.png" alt="" />
+            <img class="cloud cloud-drift-center" src="imgs/g225.png" alt="" />
+            <img class="cloud cloud-drift-right" src="imgs/g220.png" alt="" />
+          </div>
+
+          <section class="programs content-width" id="explore" aria-labelledby="programs-title">
+            <div class="section-heading"><span class="eyebrow">Stratospheric perspective</span><h2 id="programs-title">Explore Beyond<br />Boundaries</h2></div>
+            <div class="program-grid">
+              <button class="program-card" data-explore="courses"><span class="card-icon"><svg><use href="#icon-compass"/></svg></span><h3>Stellar Courses</h3><p>200+ courses across sciences, humanities, and emerging fields crafted by world-class minds.</p><span class="card-link">Discover courses <svg><use href="#icon-arrow"/></svg></span></button>
+              <button class="program-card" data-explore="internships"><span class="card-icon"><svg><use href="#icon-people"/></svg></span><h3>Virtual Internships</h3><p>Collaborative cohorts that tackle real-world research projects together in virtual environments.</p><span class="card-link">Find your cohort <svg><use href="#icon-arrow"/></svg></span></button>
+              <button class="program-card" data-explore="workshops"><span class="card-icon"><svg><use href="#icon-terminal"/></svg></span><h3>Deep Dives</h3><p>Intensive workshops, simulations, and virtual labs constructed for hands-on mastery of complex topics.</p><span class="card-link">Take a deep dive <svg><use href="#icon-arrow"/></svg></span></button>
+            </div>
+            <div class="programs-action"><button class="button button-outline" data-explore="all">Explore Programs <svg><use href="#icon-compass"/></svg></button></div>
+          </section>
+        </section>
+
+        <section class="partners" aria-label="Our learning partners"><div class="partners-inner">
+          <span class="partner"><span class="brand-mark"><svg><use href="#icon-rocket"/></svg></span>Placeholder Company</span>
+          <span class="partner"><span class="brand-mark"><svg><use href="#icon-rocket"/></svg></span>Placeholder Company</span>
+          <span class="partner"><span class="brand-mark"><svg><use href="#icon-rocket"/></svg></span>Placeholder Company</span>
+          <span class="partner"><span class="brand-mark"><svg><use href="#icon-rocket"/></svg></span>Placeholder Company</span>
+        </div></section>
+
+        <div class="earth-section">
+          <section class="life-section content-width" aria-labelledby="life-title">
+            <div class="life-copy"><h2 id="life-title">Where Learning Meets<br class="desktop-break" /> Life</h2><p>Every discovery in the cosmos connects back to the world we share. Join a community of explorers turning knowledge into impact — on campus, in labs, and deep within the field.</p></div>
+            <div class="terrain-image"><img src="imgs/terrain-network.jpg" width="1264" height="848" alt="A green mountain landscape connected by a glowing network of research and discovery" loading="lazy" /></div>
+          </section>
+
+          <section class="testimonial content-width" id="testimony" aria-label="An explorer's story">
+            <blockquote>“COSMOS didn’t just teach me astrophysics; it placed me in a research cohort that designed orbit flightpaths. The platform bridges pure scholarly research with concrete team execution.”</blockquote>
+            <div class="testimonial-attribution"><div class="author"><img src="imgs/aris-vance.jpg" width="48" height="48" alt="Dr. Aris Vance" loading="lazy" /><div><strong>Dr. Aris Vance</strong><span>Research Fellow, Cambridge Sector</span></div></div><span class="verified"><svg><use href="#icon-shield"/></svg>Verified alumnus</span></div>
+          </section>
+
+          <section class="mission content-width" aria-labelledby="mission-title"><h2 id="mission-title">Are You Ready to Embark?</h2><p>Applications for the Fall Cohort are now open. Secure your seat<br class="desktop-break" /> alongside global academic minds.</p><button class="button" data-account="signup">Join the Mission <svg><use href="#icon-arrow"/></svg></button></section>
+        </div>
+      </main>
+
+      <footer class="site-footer"><div class="content-width">
+        <div class="footer-main"><div class="footer-about"><a class="footer-brand" href="#home"><span class="cosmos-mark" aria-hidden="true"></span>COSMOS</a><p>A high-fidelity adventurous academic portal charting knowledge structures across sciences and humanities.</p></div>
+          <div class="footer-column"><h3>Organization</h3><button data-info="about">About Us</button><button data-info="team">Our Team</button><button data-info="careers">Careers</button><button data-info="press">Press</button></div>
+          <div class="footer-column"><h3>Programs</h3><button data-explore="courses">Browse Courses</button><button data-explore="internships">Research Labs</button><button data-info="fellowships">Fellowships</button><button data-explore="workshops">Events</button></div>
+          <div class="footer-column"><h3>Support</h3><button data-info="help">Help Center</button><button data-info="contact">Contact Us</button><button data-info="accessibility">Accessibility</button><button data-info="status">Status</button></div>
+          <div class="footer-column"><h3>Legal</h3><button data-info="privacy">Privacy Policy</button><button data-info="terms">Terms of Service</button><button data-info="cookies">Cookie Policy</button></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 Cosmos Education. All rights reserved.</p><div class="social-links"><button data-info="community" aria-label="COSMOS community"><svg><use href="#icon-bird"/></svg></button><button data-info="campus" aria-label="Virtual campus"><svg><use href="#icon-monitor"/></svg></button><button data-info="about" aria-label="Our universe"><svg><use href="#icon-globe"/></svg></button></div></div>
+      </div></footer>
+    </div>
+
+    <dialog class="dialog catalog-dialog" id="explore-dialog" aria-labelledby="catalog-title">
+      <button class="dialog-close" data-close aria-label="Close program explorer"><svg><use href="#icon-close"/></svg></button>
+      <span class="eyebrow">Your next discovery</span><h2 id="catalog-title">Explore the possibilities.</h2><p class="dialog-intro">A little curiosity can take you a long way. Find your next mission.</p>
+      <label class="search-field"><svg><use href="#icon-search"/></svg><input id="program-search" type="search" placeholder="Search subjects, skills, or programs…" aria-label="Search programs" autocomplete="off" /><kbd>Esc</kbd></label>
+      <div class="catalog-filters" role="group" aria-label="Filter programs"><button data-filter="all" aria-pressed="true">All programs</button><button data-filter="courses" aria-pressed="false">Courses</button><button data-filter="internships" aria-pressed="false">Internships</button><button data-filter="workshops" aria-pressed="false">Deep dives</button><button data-filter="saved" aria-pressed="false">Saved <span id="saved-count">0</span></button></div>
+      <p class="results-count" id="results-count" aria-live="polite"></p><div id="catalog-results" class="catalog-results"></div>
+    </dialog>
+
+    <dialog class="dialog account-dialog" id="account-dialog" aria-labelledby="account-title">
+      <button class="dialog-close" data-close aria-label="Close explorer profile"><svg><use href="#icon-close"/></svg></button>
+      <span class="brand-mark account-mark"><svg><use href="#icon-rocket"/></svg></span><span class="eyebrow">The next frontier is yours</span><h2 id="account-title">Join the mission.</h2><p class="dialog-intro" id="account-intro">Create your explorer profile and find where your curiosity takes you.</p>
+      <form id="account-form"><div id="name-field" class="form-field"><label for="explorer-name">Your name</label><input id="explorer-name" name="name" autocomplete="name" placeholder="Alex Explorer" maxlength="80" required /></div><div class="form-field"><label for="explorer-email">Email address</label><input id="explorer-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required /></div><div id="interest-field" class="form-field"><label for="explorer-interest">What sparks your curiosity?</label><select id="explorer-interest" name="interest"><option value="Space & astrophysics">Space &amp; astrophysics</option><option value="Earth & climate">Earth &amp; climate</option><option value="Technology & engineering">Technology &amp; engineering</option><option value="Humanities & discovery">Humanities &amp; discovery</option></select></div><p class="form-error" id="account-error" role="alert"></p><button class="button account-submit" type="submit">Create explorer profile <svg><use href="#icon-arrow"/></svg></button><p class="form-note">Website preview: your profile is saved only on this device. No account is created on a server.</p></form>
+      <div id="profile-success" class="profile-success" hidden><span class="success-icon"><svg><use href="#icon-check"/></svg></span><p id="profile-message"></p><button class="button" data-explore="all">Discover your next mission <svg><use href="#icon-arrow"/></svg></button><button class="text-button" id="reset-profile">Remove saved profile</button></div>
+      <p class="dialog-status" role="status"></p>
+    </dialog>
+
+    <dialog class="dialog info-dialog" id="info-dialog" aria-labelledby="info-title"><button class="dialog-close" data-close aria-label="Close details"><svg><use href="#icon-close"/></svg></button><span class="eyebrow" id="info-eyebrow">The COSMOS community</span><h2 id="info-title"></h2><div class="info-content" id="info-content"></div><div id="info-action"></div><p class="dialog-status" role="status"></p></dialog>
+    <div class="toast" id="toast" role="status"></div>
+  </body>
+</html>
