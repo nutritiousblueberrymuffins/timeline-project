@@ -1,0 +1,28 @@
+
+
+body {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    border-top: 3px solid black;
+    padding-top: 10px;
+}
+
+h3 {
+    color: green;
+    margin: 0px;
+}
+
+
+h2 { 
+    color: rgb(29, 114, 205);    
+    margin: 0px;
+    font-size: larger;
+}
+
+
+p {
+    margin-top: 5px;
+}
