@@ -1,0 +1,128 @@
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "clear divide multiply multiply" 
+    "number number number  subtract" 
+    "number number number  addition" 
+    "number number number  addition" 
+    "number number number  equal  "  ;
+
+    /* 
+
+    How grid works
+    ---------------------------------------------------------------------
+    -grid-template-areas is organized by rows & columns
+    -Every row must contain the same number of items.
+    -names are a declaration of an item, number of names is how many items with that associated name that are occupying that specific area 
+    -Each name declares which associated item occupies that grid area
+    -Repeating a name makes that area span multiple rows or columns.
+    -A named area must form a complete rectangle vertically or horizontally or may occupy one cell, cant make weird shapes like an L 
+    -Named areas cannot form disconnected or irregular shapes, such as an L.
+    -Use a period (.) to represent an unnamed or empty cell.
+
+
+
+    How subgrid works
+    ---------------------------------------------------------------------
+    */
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  gap: 3px;
+  background-color: dodgerblue;
+  padding: 5px;
+}
+
+.container div {
+  background-color: white;
+  padding: 10px;
+}
+
+.container div.clear {
+  grid-area: clear;
+  text-align: center;
+}
+
+.container div.divide {
+  grid-area: divide;
+  text-align: center;
+}
+
+.container div.multiply {
+  grid-area: multiply;
+  text-align: justify;
+}
+
+.container div.subtract {
+  grid-area: subtract;
+  text-align: justify;
+}
+
+.container div.addition {
+  grid-area: addition;
+  text-align: justify;
+}
+
+.container div.equal {
+  grid-area: equal;
+  text-align: justify;
+}
+
+.container div.number {
+    
+  display: grid;
+  grid-area: number;
+  text-align: center;
+  grid-template: subgrid / subgrid; 
+  
+}
+
+
+
+/*
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header" 
+    "header header header" 
+    "menu content content"
+    "footer footer test";
+
+
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: dodgerblue;
+  padding: 5px;
+}
+
+
+.container div {
+  background-color: white;
+  padding: 10px;
+}
+
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.container div.menu {
+  grid-area: menu;
+}
+
+.container div.content {
+  grid-area: content;
+}
+
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+
+
+.container div.test {
+  grid-area: test;
+  text-align: center;  
+}
+*/
