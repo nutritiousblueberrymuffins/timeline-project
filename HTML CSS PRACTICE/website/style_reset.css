@@ -1,0 +1,30 @@
+
+/* 
+READ ME: Browsers have built-in styling sheets (User Agent Stylesheets) that apply default margins,
+paddings, and font sizes to your code. Because every browser (Chrome, Safari, Firefox)
+has slightly different defaults, you need a CSS reset to guarantee your layout behaves consistently.
+*/
+
+
+/* 1. Reset defaults and enforce consistent box sizing */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+/* 2. Prevent images from breaking layouts */
+img, picture, svg {
+max-width: 100%;
+display: block;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+

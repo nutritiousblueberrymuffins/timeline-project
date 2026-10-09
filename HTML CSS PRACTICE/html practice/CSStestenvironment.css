@@ -1,0 +1,37 @@
+
+p {
+  animation-duration: 3s;
+  animation-name: slide-in;
+}
+
+p span {
+  display: inline-block;
+  animation-duration: 3s;
+  animation-name: grow-shrink;
+}
+
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
+@keyframes grow-shrink {
+  25%,
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 200%;
+    color: magenta;
+  }
+}

@@ -1,0 +1,153 @@
+
+/*
+
+Before writing any layouts, it is best practice to define your global design system inside
+the CSS :root selector. This acts like a centralized dashboard for your site's visual
+theme. If you need to change your brand color later, you only have to change it in this one
+spot.
+
+Color Palette: Primary, secondary, background, and text colors.
+
+Typography: Your primary font families and font scales.
+
+*/
+
+:root {
+
+    --headerfont: 'Courier New', Courier, monospace;
+    --header-color: linear-gradient(#07B3F9, #0461F2);
+
+    --primaryfont: 'Courier New', Courier, monospace;
+    --primary-color: antiquewhite;
+
+    --secondaryfont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --secondary-color: darkslategray;
+}
+
+
+body { 
+    /* var()
+    var() creates an alias for a property but a little nuance is that these alias are completely 
+    independent from one another andd dont reference each other unless we decide to 'explicitly' 
+    references another. 
+    */
+
+    background-image: var(--header-color);
+    background-repeat: no-repeat; /*By default, browsers repeat (tile) background images and gradients horizontally and vertically to fill the entire element.*/
+    background-attachment: fixed; /*This property determines whether the background scrolls along with the webpage content or stays glued to the screen.*/
+    box-sizing: border-box; 
+    margin: 0px;
+}
+
+.headerfont {
+    font-family: var(--headerfont);
+    color: var(--header-color);
+    font-size: 48px;
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainfont {
+    font-family: var(--primaryfont);
+    color: var(--primary-color);
+        font-size: 32px;
+}
+
+.secondaryfont {
+    font-family: var(--secondaryfont);
+    color: var(--secondary-color);
+        font-size: 20px;
+}
+
+.flexlayout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 18px;
+    align-items: safe center;
+}
+
+/*-------------------HEADER-------------------- */
+
+.headerimg {
+    display: flex;
+
+    justify-content: start;
+    width: 30%;
+    background: rgb(145, 141, 182);
+
+}
+
+.navigationlayout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 18px;
+
+    text-decoration: none;
+    gap: 25px;
+}
+
+
+@keyframes resize {
+  to {
+    font-size: 120%;
+  }
+
+}
+
+a:hover { /* learn how to do psuedo or ':' */
+  animation: resize 1s infinite alternate; 
+}
+
+@keyframes test {
+  to {
+    font-size: 120%;
+  }
+
+}
+
+#g195 { /*messed up svg fix later */
+  animation: astronaut-bob 2.8s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes astronaut-bob {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #g195 {
+    animation: none;
+  }
+}
+
+
+
+
+
+/* TODO:
+    -Add fonts for our website
+    -Create Logo for website
+    -Create Hover for Search that will allow user to search and show a dropdown list
+    -Hover Animations for Explore, About, Join Mission (DONE)
+    -Add webpages for Search, Explore, About, Join Mission
+    -Redo Blackline border for header its ugly
+    -Animate SVG, (need to redo)
+
+    -Backend
+    -Blueprint for code
+    -Blueprint for software architectture
+*/

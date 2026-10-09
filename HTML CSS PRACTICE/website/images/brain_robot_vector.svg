@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="2000" height="2000" viewBox="0 0 2000 2000"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Brain robot character</title>
+  <desc id="desc">Editable vector reconstruction of a colorful robot with a brain under a glass dome, curved arms, green hands, and a circular chest emblem.</desc>
+
+  <defs>
+    <style>
+      .dome-fill { fill: #e3e5f8; } 
+      .brain-fill { fill: #B56EF1; }
+      .detail-fill { fill: #4C0679; }
+      .cyan-fill { fill: #00F8D9; }
+      .blue-fill { fill: #497CF2; }
+      .arm-blue-stroke { fill: none; stroke: #497DF3; }
+      .violet-fill { fill: #3A19A5; }
+      .violet-stroke { fill: none; stroke: #3A19A5; }
+      .lime-fill { fill: #A1F16C; }
+      .white-fill { fill: #FFFFFF; }
+      .detail-line { fill: none; stroke: #4C0679; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Transparent canvas; every visible element is an editable vector shape. -->
+
+  <g id="glass-dome">
+    <path class="dome-fill" d="M436 676L466 379C484 201 638 65 813 65h404c175 0 329 136 347 314l27 297Z"/>
+  </g>
+
+  <g id="brain">
+    <path class="brain-fill" d="M1000 180c53 0 92 32 92 76 62-16 117-5 146 29 25 29 26 65 11 88 60-9 103 30 103 76 0 22-7 41-21 56 44 17 68 58 61 100-9 54-48 79-89 77H697c-40-3-62-40-48-92 10-40 36-73 69-86-17-20-20-47-13-72 15-50 56-69 101-59-16-29-10-64 11-91 27-34 71-44 92-27 0-43 38-75 91-75Z"/>
+
+    <g class="detail-line" stroke-width="13">
+      <path d="M922 257c12 18 14 35 10 45"/>
+      <path d="M1078 257c-12 18-14 35-10 45"/>
+
+      <path d="M873 359c17 10 24 27 20 44-3 12-10 20-21 24"/>
+      <path d="M893 397c22 1 42 10 59 20"/>
+      <path d="M1127 359c-17 10-24 27-20 44 3 12 10 20 21 24"/>
+      <path d="M1107 397c-22 1-42 10-59 20"/>
+
+      <path d="M735 492l55 23"/>
+      <path d="M812 478c-22 15-25 49-6 75"/>
+      <path d="M1265 492l-55 23"/>
+      <path d="M1188 478c22 15 25 49 6 75"/>
+
+      <path d="M808 620c-9 18-9 37-4 52"/>
+      <path d="M1192 620c9 18 9 37 4 52"/>
+    </g>
+  </g>
+
+  <g id="rear-limbs">
+    <path class="arm-blue-stroke" d="M304 1058C217 1100 176 1191 174 1297c-2 141 63 259 191 337"
+          stroke-width="84" stroke-linecap="round"/>
+    <path class="arm-blue-stroke" d="M1696 1058c87 42 128 133 130 239 2 141-63 259-191 337"
+          stroke-width="84" stroke-linecap="round"/>
+
+    <path class="violet-stroke" d="M688 1785A126 126 0 1 0 547 1938"
+          stroke-width="62" stroke-linecap="butt"/>
+    <path class="violet-stroke" d="M1312 1785A126 126 0 1 1 1453 1938"
+          stroke-width="62" stroke-linecap="butt"/>
+
+    <ellipse class="detail-fill" cx="330" cy="1036" rx="120" ry="145"/>
+    <ellipse class="detail-fill" cx="1670" cy="1036" rx="120" ry="145"/>
+  </g>
+
+  <g id="lower-body">
+    <path class="lime-fill" d="M910 1394h180l-12 187c-3 31-24 48-56 49h-44c-32-1-53-18-56-49Z"/>
+    <path class="detail-fill" d="M810 1375c2 61 76 93 190 93s188-32 190-93Z"/>
+  </g>
+
+  <g id="turquoise-body">
+    <path class="cyan-fill" d="M339 704h1338l-2 115c-3 151-55 287-158 381-107 137-307 218-517 218s-410-81-517-218C380 1106 337 970 339 819Z"/>
+  </g>
+
+  <g id="front-panel">
+    <path class="blue-fill" d="M332 845l668 4 690 3c-6 102-57 219-123 326l-1129-4c-63-103-101-215-106-329Z"/>
+
+    <g class="detail-line" stroke-width="13">
+      <path d="M391 908h274l45 45"/>
+      <path d="M1609 908h-274l-45 45"/>
+      <path d="M464 1133l193 2 36-31"/>
+      <path d="M1536 1133l-193 2-36-31"/>
+    </g>
+  </g>
+
+  <g id="chest-emblem">
+    <circle class="violet-fill" cx="1000" cy="1054" r="269"/>
+    <circle class="white-fill" cx="1000" cy="1054" r="174"/>
+    <circle class="violet-fill" cx="1134" cy="1166" r="53"/>
+  </g>
+
+  <g id="arm-details" class="detail-line" stroke-width="13">
+    <path d="M204 1170c14 10 29 15 47 14"/>
+    <path d="M184 1258c14 10 31 15 52 14"/>
+    <path d="M186 1348c17 8 36 9 54 3"/>
+    <path d="M207 1432c20 8 39 7 57-2"/>
+    <path d="M240 1514c21 1 41-5 60-16"/>
+    <path d="M301 1596c21-8 40-20 56-36"/>
+
+    <path d="M1796 1170c-14 10-29 15-47 14"/>
+    <path d="M1816 1258c-14 10-31 15-52 14"/>
+    <path d="M1814 1348c-17 8-36 9-54 3"/>
+    <path d="M1793 1432c-20 8-39 7-57-2"/>
+    <path d="M1760 1514c-21 1-41-5-60-16"/>
+    <path d="M1699 1596c-21-8-40-20-56-36"/>
+  </g>
+
+  <g id="hands">
+    <circle class="lime-fill" cx="429" cy="1682" r="105"/>
+    <circle class="lime-fill" cx="1571" cy="1682" r="105"/>
+
+    <g class="detail-line" stroke-width="13">
+      <path d="M490 1629c14 20 19 45 14 68"/>
+      <path d="M495 1721c-4 11-10 21-18 29"/>
+      <path d="M1510 1629c-14 20-19 45-14 68"/>
+      <path d="M1505 1721c4 11 10 21 18 29"/>
+    </g>
+  </g>
+
+  <g id="dome-rim">
+    <rect class="detail-fill" x="307" y="662" width="1399" height="47" rx="23.5"/>
+  </g>
+</svg>
