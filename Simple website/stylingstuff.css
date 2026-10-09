@@ -1,0 +1,124 @@
+:root {
+    --ink: #202020;
+    --muted: #8c949c;
+    --link: #0877d1;
+    --line: 3px solid var(--ink);
+    --handwritten: "Comic Sans MS", "Segoe Print", cursive;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    padding: 28px;
+    background: #fff;
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a { color: inherit; text-decoration: none; }
+
+.portfolio-shell { min-height: 1760px; border: var(--line); }
+.site-header { min-height: 472px; border-bottom: var(--line); }
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 45px;
+    font-size: 29px;
+}
+.brand { display: flex; align-items: center; gap: 18px; font-weight: 600; }
+.brand-mark {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: var(--ink);
+    border-radius: 7px 12px 9px 11px;
+    transform: rotate(1deg);
+}
+.nav-links { display: flex; padding: 0; margin: 0; list-style: none; }
+.nav-links li + li::before { content: "/"; padding: 0 17px; }
+.nav-links a:hover, .nav-links a:focus-visible { color: var(--link); }
+.hero { padding: 91px 20px 70px; text-align: center; }
+.hero h1, .panel h2, .panel h3, .reviews h2, .site-footer {
+    font-family: var(--handwritten);
+}
+.hero h1 {
+    margin: 0;
+    font-size: clamp(48px, 4.5vw, 66px);
+    line-height: 1.15;
+    font-weight: 700;
+}
+.hero p { margin: 24px 0 0; color: var(--muted); font-size: 25px; font-weight: 600; }
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 26% 40% 34%;
+    min-height: 570px;
+    border-bottom: var(--line);
+}
+.panel { min-width: 0; }
+.panel + .panel { border-left: var(--line); }
+.panel h2 { margin: 30px 40px 28px; font-size: 31px; line-height: 1.1; }
+.projects > ul { padding: 0; margin: 0; list-style: none; font-size: 25px; }
+.projects > ul li { padding: 17px 44px; border-bottom: var(--line); }
+.projects > ul li:first-child { padding-top: 7px; }
+.experience h2, .experience article { margin-left: 32px; margin-right: 32px; }
+.experience article { font-size: 24px; }
+.experience article + article { margin: 31px 0 0; padding: 25px 32px 0; border-top: var(--line); }
+.experience h3 { margin: 0 0 10px; font-size: 25px; font-weight: 400; }
+.experience p { max-width: 440px; margin: 0 0 14px; }
+.experience a { color: var(--link); font-size: 21px; }
+.education { padding-right: 32px; }
+.education h2, .education > p, .education > ul { margin-left: 32px; }
+.education > p { margin-top: 0; margin-bottom: 31px; font-size: 24px; }
+.education > ul { padding: 0; margin-top: 0; list-style: none; font-size: 23px; }
+.education li::before { content: "- "; }
+
+.reviews { padding: 48px 62px 0; }
+.reviews h2 { margin: 0 0 34px; font-size: 32px; }
+.review-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+.review-card {
+    min-height: 255px;
+    padding: 38px 26px 30px;
+    margin: 0;
+    border: var(--line);
+    border-radius: 62px;
+    font-size: 23px;
+}
+.review-card p { margin: 0 0 20px; }
+.review-card footer { color: #d0d0d0; font-weight: 600; }
+.site-footer { padding: 198px 20px 92px; text-align: center; font-size: 31px; }
+.site-footer p { margin: 0; }
+
+@media (max-width: 850px) {
+    body { padding: 12px; }
+    .portfolio-shell { min-height: 0; }
+    .site-header { min-height: auto; }
+    .navigation { flex-direction: column; gap: 25px; padding: 30px 15px; font-size: 20px; }
+    .brand { flex-direction: column; gap: 10px; }
+    .nav-links li + li::before { padding: 0 8px; }
+    .hero { padding: 45px 16px 70px; }
+    .hero h1 { font-size: 39px; }
+    .hero p { font-size: 18px; }
+    .profile-grid { display: block; min-height: 0; }
+    .panel + .panel { border-left: 0; border-top: var(--line); }
+    .panel h2 { margin: 28px 25px; text-align: center; }
+    .projects > ul li { padding: 14px 25px; text-align: center; background: #f2f2f2; font-size: 20px; }
+    .experience article, .experience h2, .education h2, .education > p, .education > ul {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .experience article { padding-bottom: 28px; font-size: 20px; }
+    .experience article + article { margin: 0; padding: 28px 25px; }
+    .education { padding: 0 0 28px; }
+    .education > p, .education > ul { font-size: 20px; }
+    .reviews { padding: 38px 25px; }
+    .review-list { grid-template-columns: 1fr; gap: 20px; }
+    .review-card { min-height: auto; border-radius: 38px; font-size: 20px; }
+    .site-footer { padding: 70px 15px; font-size: 24px; }
+}
+
+@media (max-width: 430px) {
+    .nav-links { font-size: 16px; }
+    .nav-links li + li::before { padding: 0 5px; }
+}
